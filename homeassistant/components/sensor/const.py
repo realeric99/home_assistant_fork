@@ -308,6 +308,11 @@ class SensorDeviceClass(StrEnum):
 
     Unit of measurement: `var`
     """
+    RAIN_INTENSITY = "rain_intensity"
+    """Reactive power.
+
+    Unit of measurement: `mm`, `inch`
+    """
 
     SIGNAL_STRENGTH = "signal_strength"
     """Signal strength.

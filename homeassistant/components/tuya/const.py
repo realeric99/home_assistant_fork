@@ -119,6 +119,7 @@ class DPCode(StrEnum):
     BASIC_WDR = "basic_wdr"
     BATTERY_PERCENTAGE = "battery_percentage"  # Battery percentage
     BATTERY_STATE = "battery_state"  # Battery state
+    BATTERY_STATUS = "battery_status"  # Battery status
     BATTERY_VALUE = "battery_value"  # Battery value
     BRIGHT_CONTROLLER = "bright_controller"
     BRIGHT_STATE = "bright_state"  # Brightness status
@@ -211,6 +212,7 @@ class DPCode(StrEnum):
     HUMIDITY = "humidity"  # Humidity
     HUMIDITY_CURRENT = "humidity_current"  # Current humidity
     HUMIDITY_INDOOR = "humidity_indoor"  # Indoor humidity
+    HUMIDITY_OUTDOOR = "humidity_outdoor"  # Indoor humidity
     HUMIDITY_SET = "humidity_set"  # Humidity setting
     HUMIDITY_VALUE = "humidity_value"  # Humidity
     IPC_WORK_MODE = "ipc_work_mode"
@@ -261,6 +263,7 @@ class DPCode(StrEnum):
     PRESSURE_VALUE = "pressure_value"
     PUMP_RESET = "pump_reset"  # Water pump reset
     OXYGEN = "oxygen"  # Oxygen bar
+    RAIN_RATE = "rain_rate"  # Rain Rate in mm
     RECORD_MODE = "record_mode"
     RECORD_SWITCH = "record_switch"  # Recording switch
     RELAY_STATUS = "relay_status"
@@ -329,6 +332,9 @@ class DPCode(StrEnum):
     TEMP_BOILING_F = "temp_boiling_f"
     TEMP_CONTROLLER = "temp_controller"
     TEMP_CURRENT = "temp_current"  # Current temperature in °C
+    TEMP_CURRENT_EXTERNAL = (
+        "temp_current_external"  # Current temperature External in °C
+    )
     TEMP_CURRENT_F = "temp_current_f"  # Current temperature in °F
     TEMP_INDOOR = "temp_indoor"  # Indoor temperature in °C
     TEMP_SET = "temp_set"  # Set the temperature in °C
@@ -348,6 +354,7 @@ class DPCode(StrEnum):
     UPPER_TEMP = "upper_temp"
     UPPER_TEMP_F = "upper_temp_f"
     UV = "uv"  # UV sterilization
+    UV_INDEX = "uv_index"
     VA_BATTERY = "va_battery"
     VA_HUMIDITY = "va_humidity"
     VA_TEMPERATURE = "va_temperature"
@@ -366,6 +373,9 @@ class DPCode(StrEnum):
     WINDOW_CHECK = "window_check"
     WINDOW_STATE = "window_state"
     WINDSPEED = "windspeed"
+    WINDSPEED_AVG = "windspeed_avg"
+    WINDSPEED_GUST = "windspeed_gust"
+    WIND_DIRECT = "wind_direct"
     WIRELESS_BATTERYLOCK = "wireless_batterylock"
     WIRELESS_ELECTRICITY = "wireless_electricity"
     WORK_MODE = "work_mode"  # Working mode
